@@ -1,13 +1,13 @@
 @import './variables';
 
 .header {
-  padding: 0 50px;
+  padding: $HeaderPadding;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__logo {
-    height: 40px;
+    height: $HeaderLogo;
   }
 
   &__list {
@@ -18,7 +18,7 @@
 
     &-item {
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: $HeaderItemMargin;
       }
     }
 
