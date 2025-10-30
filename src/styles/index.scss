@@ -20,21 +20,21 @@ h2 {
 }
 
 .wrapper {
-  padding: 50px 40px;
+  padding: $GridPadding;
   display: grid;
-  gap: 46px 48px;
-  grid-template-columns: repeat(1, 200px);
+  gap: $GridGap;
+  grid-template-columns: repeat(1, $CardWidth);
   justify-content: center;
 
   @media (min-width: 488px) {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, $CardWidth);
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, $CardWidth);
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $CardWidth);
   }
 }
